@@ -1,0 +1,78 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        nav {
+            background-color: #008080;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #00ced1;
+        }
+        h1 {
+            color: #008080;
+            text-shadow: 2px 2px 5px #00ced1;
+            transition: text-shadow 0.3s ease-in-out;
+        }
+        h1:hover {
+            text-shadow: 2px 2px 15px #00ced1;
+        }
+        .motivational-phrase {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #006666;
+            text-shadow: 1px 1px 3px #00ced1;
+            transition: transform 0.3s ease-in-out;
+        }
+        .motivational-phrase:hover {
+            transform: scale(1.1);
+        }
+        .container {
+            background-color: #e0ffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 206, 209, 0.5);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .container:hover {
+            box-shadow: 0 0 20px rgba(0, 206, 209, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mí</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="container">
+        <h1>Bienvenido</h1>
+        <p>Gracias por visitar mi tarea.</p>
+        <p class="motivational-phrase">"El aprendizaje de la programación es un viaje continuo de descubrimiento y creatividad."</p>
+    </div>
+</body>
+</html>
+

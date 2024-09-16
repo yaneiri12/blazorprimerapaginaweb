@@ -1,0 +1,80 @@
+﻿@page "/tablamultiplicar"
+
+<h3>Tabla de Multiplicar</h3>
+
+<div class="container">
+    <input type="number" @bind="numero" placeholder="Introduce un número" />
+
+    <table>
+        <thead>
+            <tr>
+                <th>Multiplicador</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 1; i <= 10; i++)
+            {
+                <tr>
+                    <td>@i</td>
+                    <td>@(i * numero)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private int numero = 1;
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        color: #333;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .container {
+        background-color: #e0ffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 206, 209, 0.5);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+        .container:hover {
+            box-shadow: 0 0 20px rgba(0, 206, 209, 0.8);
+        }
+
+    input {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    table {
+        margin: 20px auto;
+        border-collapse: collapse;
+        width: 50%;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #008080;
+        color: white;
+    }
+
+    td {
+        background-color: #e0ffff;
+    }
+</style>
+

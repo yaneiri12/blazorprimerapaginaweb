@@ -1,0 +1,110 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Más</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+
+        nav {
+            background-color: #008080;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 1.2em;
+                transition: color 0.3s ease-in-out;
+            }
+
+                nav a:hover {
+                    color: #00ced1;
+                }
+
+        h1, h2 {
+            color: #008080;
+            text-shadow: 2px 2px 5px #00ced1;
+            transition: text-shadow 0.3s ease-in-out;
+        }
+
+            h1:hover, h2:hover {
+                text-shadow: 2px 2px 15px #00ced1;
+            }
+
+        .motivational-phrase {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #006666;
+            text-shadow: 1px 1px 3px #00ced1;
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .motivational-phrase:hover {
+                transform: scale(1.1);
+            }
+
+        .container {
+            background-color: #e0ffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 206, 209, 0.5);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+            .container:hover {
+                box-shadow: 0 0 20px rgba(0, 206, 209, 0.8);
+            }
+    </style>
+</head>
+<body>
+    <nav class="menu-bar">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mí</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <h1>Aprende Más</h1>
+
+        <h2>1. Blazor Tutorial C# - Part 1 | Blazor Basics in 30 Mins</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dY_AWdCzsCY" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Descripción:</strong> Este video es un tutorial sobre cómo usar Blazor, un framework web que permite a los desarrolladores crear aplicaciones web usando C# y HTML. Cubre temas como la creación de un proyecto Blazor, el uso de archivos Razor, y la implementación de eventos y condiciones.</p>
+        <p><strong>Lo que me gustó:</strong> La explicación clara y concisa de los conceptos básicos de Blazor en solo 30 minutos, ideal para principiantes.</p>
+
+        <h2>2. Blazor en 10 minutos - ¿Qué es Blazor?</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VDkiB5F7FH0" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Descripción:</strong> Este video explica en 10 minutos qué es Blazor, un framework creado por Microsoft para construir aplicaciones web interactivas usando solo HTML y C#. Muestra ejemplos de aplicaciones Blazor y las diferencias entre Blazor Server Side y Blazor WebAssembly.</p>
+        <p><strong>Lo que me gustó:</strong> La rapidez y eficiencia con la que se presentan los conceptos clave, perfecto para quienes tienen poco tiempo.</p>
+
+        <h2>3. Introducción a Blazor - Qué es Blazor y cómo funciona</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hwzzpOq0MIg" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Descripción:</strong> Este video es una introducción a Blazor, explicando las diferencias entre Blazor Server y Blazor WebAssembly, y cómo crear una aplicación Blazor con Visual Studio. Incluye una demostración de una aplicación Blazor WebAssembly.</p>
+        <p><strong>Lo que me gustó:</strong> La demostración práctica que ayuda a visualizar cómo funciona Blazor en un entorno real.</p>
+
+        <h2>4. Carl Franklin's Blazor Train</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL8h4jt35t1wjvwFnvcB2LlYL4jLRzRmoz" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Descripción:</strong> Una serie de videos donde Carl Franklin aborda diferentes temas de Blazor, desde conceptos básicos hasta avanzados. Cada episodio se centra en un aspecto específico del desarrollo con Blazor.</p>
+        <p><strong>Lo que me gustó:</strong> La profundidad y variedad de temas cubiertos, ideal para desarrolladores que quieren profundizar en Blazor.</p>
+
+        <h2>5. Front-end Web Development with .NET for Beginners</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/playlist?list=PL8h4jt35t1wjvwFnvcB2LlYL4jLRzRmoz" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Descripción:</strong> Esta serie de videos enseña los fundamentos del desarrollo web front-end con Blazor, incluyendo cómo configurar el entorno de desarrollo, crear un nuevo proyecto, y trabajar con componentes Blazor.</p>
+        <p><strong>Lo que me gustó:</strong> La estructura paso a paso que facilita el aprendizaje progresivo, perfecto para principiantes.</p>
+    </div>
+</body>
+</html>

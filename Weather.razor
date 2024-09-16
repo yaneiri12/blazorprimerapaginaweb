@@ -1,0 +1,106 @@
+﻿@page "/weather"
+@inject HttpClient Http
+
+
+@page "/calculadora"
+
+<h3>Calculadora</h3>
+
+<div class="container">
+    <input type="number" @bind="numero1" placeholder="Número 1" />
+    <input type="number" @bind="numero2" placeholder="Número 2" />
+
+    <div>
+        <button @onclick="Sumar">➕ Sumar</button>
+        <button @onclick="Restar">➖ Restar</button>
+        <button @onclick="Multiplicar">✖️ Multiplicar</button>
+        <button @onclick="Dividir">➗ Dividir</button>
+    </div>
+
+    <h4>Resultado: @resultado</h4>
+</div>
+
+@code {
+    private double numero1;
+    private double numero2;
+    private double resultado;
+
+    private void Sumar()
+    {
+        resultado = numero1 + numero2;
+    }
+
+    private void Restar()
+    {
+        resultado = numero1 - numero2;
+    }
+
+    private void Multiplicar() => resultado = numero1 * numero2;
+
+    private void Dividir()
+    {
+        if (numero2 != 0)
+        {
+            resultado = numero1 / numero2;
+        }
+        else
+        {
+            resultado = double.NaN; // No se puede dividir por cero
+        }
+    }
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        color: #333;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .container {
+        background-color: #e0ffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 206, 209, 0.5);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+        .container:hover {
+            box-shadow: 0 0 20px rgba(0, 206, 209, 0.8);
+        }
+
+    input {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #008080;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        button:hover {
+            background-color: #00ced1;
+        }
+
+    h4 {
+        color: #008080;
+        text-shadow: 2px 2px 5px #00ced1;
+        transition: text-shadow 0.3s ease-in-out;
+    }
+
+        h4:hover {
+            text-shadow: 2px 2px 15px #00ced1;
+        }
+</style>
